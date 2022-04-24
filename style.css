@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+  --default-font: 'Roboto';
+  --gray: #F4F7FE;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--default-font), sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  position: relative;
+  width: 300px;
+}
+
+.form-group {
+  position: relative;
+  width: 100%;
+}
+
+.form-group label {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.form-group .input-box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background: var(--gray);
+  padding: 0 30px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.form-group .input-box .input {
+  position: relative;
+  width: 80%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.form-group .input-box i {
+  position: relative;
+  line-height: 50px;
+}
+
+.form-group .input-box #eye-slash {
+  display: none;
+}
